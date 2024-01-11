@@ -3,7 +3,7 @@ import avatar from "../assets/image-avatar.webp";
 
 const Card = () => {
   return (
-    <article className="relative border border-black rounded-2xl bg-white max-w-xs sm:max-w-sm shadow-cardShadow">
+    <main className="border border-black rounded-2xl bg-white max-w-xs sm:max-w-sm shadow-cardShadow">
       <section className="p-5">
         <header className="rounded-xl overflow-hidden sm:overflow-auto">
           <img
@@ -14,10 +14,12 @@ const Card = () => {
         <span className="inline-block mt-6 bg-yellow font-bold py-1 px-3 rounded-md text-sm">
           Learning
         </span>
-        <p className="mt-3 text-sm">Published 21 Dec 2023</p>
-        <p className="mt-3 font-bold text-xl hover:text-yellow hover:cursor-pointer">
-          HTML & CSS foundations
+        <p className="mt-3 text-sm">
+          <time dateTime="2023-12-21">Published 21 Dec 2023</time>
         </p>
+        <h1 className="mt-3 font-bold text-xl hover:text-yellow cursor-pointer">
+          HTML & CSS foundations
+        </h1>
         <p className="mt-3 text-sm sm:text-base text-grey ">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
@@ -27,7 +29,7 @@ const Card = () => {
           <p className="font-bold text-sm">Greg Hooper</p>
         </footer>
       </section>
-    </article>
+    </main>
   );
 };
 
