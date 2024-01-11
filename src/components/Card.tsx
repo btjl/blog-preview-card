@@ -9,6 +9,7 @@ const Card = () => {
           <img
             className="w-full h-[200px] scale-[120%] sm:scale-100"
             src={illustrationArticle}
+            alt=""
           />
         </header>
         <span className="inline-block mt-6 bg-yellow font-bold py-1 px-3 rounded-md text-sm">
@@ -25,7 +26,7 @@ const Card = () => {
           content, and presentation.
         </p>
         <footer className="mt-6 flex items-center gap-3">
-          <img className="w-8 h-8" src={avatar} alt="avatar" />
+          <img className="w-8 h-8" src={avatar} alt="greg hooper" />
           <p className="font-bold text-sm">Greg Hooper</p>
         </footer>
       </section>
